@@ -133,7 +133,7 @@ class JSTestCase(unittest.TestCase):
         return "%r: %s: %s" % (self, self.test['module'], self.test['test'])
 
     def __repr__(self):
-        return "JS"
+        return self.test['module'] + "." + self.test['test'])
 
     __str__ = __repr__
 
